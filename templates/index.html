@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Task Summarizer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 Smart Task Summarizer + Tagger</h1>
+            <p>Paste your messy notes below. The AI will clean, summarize, tag, and prioritize them.</p>
+        </header>
+
+        <div class="main-content">
+            <div class="input-section">
+                <h2>1. Paste Your Raw Tasks</h2>
+                <textarea id="task-input" rows="10" placeholder="e.g., The client called, says the login button is not working on the main page. Needs to be fixed ASAP.
+We should also think about adding a new payment gateway, maybe Stripe.
+Marketing team wants a new banner for the upcoming summer sale."></textarea>
+                <button id="process-btn">✨ Process Tasks</button>
+            </div>
+
+            <div class="output-section">
+                <h2>2. Cleaned-Up Task List</h2>
+                <div id="loader" class="loader" style="display:none;"></div>
+                <div id="error-message" class="error"></div>
+                <table id="task-table">
+                    <thead>
+                        <tr>
+                            <th>Original Task</th>
+                            <th>AI Summary</th>
+                            <th>Priority (1-5)</th>
+                            <th>Tags</th>
+                        </tr>
+                    </thead>
+                    <tbody id="task-list">
+                        <!-- Processed tasks will be inserted here by JavaScript -->
+                    </tbody>
+                </table>
+                <button id="export-btn" style="display:none;">Export to CSV</button>
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
