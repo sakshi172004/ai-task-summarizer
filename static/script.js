@@ -1,4 +1,4 @@
-// FINAL SCRIPT - WITH GUARANTEED CSV EXPORT FIX FOR EXCEL
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const processBtn = document.getElementById('process-btn');

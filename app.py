@@ -1,5 +1,3 @@
-### FINAL SUBMISSION CODE - DYNAMIC & SUPER-SMART MOCK AI ###
-
 import os
 import json
 import random
@@ -77,7 +75,6 @@ def process_tasks_route():
             "tags": list(tags)
         }
         processed_tasks_list.append(fake_task)
-        # ---- End of Super-Smart Logic ----
 
     final_response = {"processed_tasks": processed_tasks_list}
     time.sleep(1) 
